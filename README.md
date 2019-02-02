@@ -1,1 +1,1 @@
-# Lyfestyle
+# Lifestyle
