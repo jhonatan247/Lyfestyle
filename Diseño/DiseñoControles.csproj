@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6C1B5828-659D-4DAC-9BD7-33617C42E4E4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DiseñoControles</RootNamespace>
+    <AssemblyName>DiseñoControles</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Complementos\Binifu\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Charts, Version=14.0.0.15, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar.Design, Version=14.0.0.15, Culture=neutral, PublicKeyToken=2c9ff1fddc42653c, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar.Layout, Version=14.0.0.15, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar.Schedule, Version=14.0.0.15, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar2, Version=14.0.0.15, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.Instrumentation, Version=14.0.0.15, Culture=neutral, PublicKeyToken=bc4a9d761ea44ef0, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controles\ContextMenuPro.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\ContextMenuPro.Designer.cs">
+      <DependentUpon>ContextMenuPro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\DateTimeCustom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\DateTimeCustom.Designer.cs">
+      <DependentUpon>DateTimeCustom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\DateTimePro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\DateTimePro.Designer.cs">
+      <DependentUpon>DateTimePro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\DropDownPro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\DropDownPro.Designer.cs">
+      <DependentUpon>DropDownPro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\InputPro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controles\InputPro.Designer.cs">
+      <DependentUpon>InputPro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\LabelPro.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\LabelPro.Designer.cs">
+      <DependentUpon>LabelPro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\News.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\News.Designer.cs">
+      <DependentUpon>News.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\TextBoxValide.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\TextBoxValide.Designer.cs">
+      <DependentUpon>TextBoxValide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ToolStripMenuItemPro.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\ToolStripMenuItemPro.Designer.cs">
+      <DependentUpon>ToolStripMenuItemPro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsEnglish\frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsEnglish\frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsEnglish\frmHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsEnglish\frmHomePage.Designer.cs">
+      <DependentUpon>frmHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsEnglish\HomeUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsEnglish\HomeUser.Designer.cs">
+      <DependentUpon>HomeUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\Espera1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Usuario\Espera1.Designer.cs">
+      <DependentUpon>Espera1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\Header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Usuario\Header.Designer.cs">
+      <DependentUpon>Header.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\ListNews.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Usuario\ListNews.Designer.cs">
+      <DependentUpon>ListNews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\Login.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Usuario\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\MessageUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controles\MessageUser.Designer.cs">
+      <DependentUpon>MessageUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Usuario\PanelMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Usuario\PanelMain.Designer.cs">
+      <DependentUpon>PanelMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\SignUp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Usuario\SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\Tools.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Usuario\Tools.Designer.cs">
+      <DependentUpon>Tools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\UserSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Usuario\UserSettings.Designer.cs">
+      <DependentUpon>UserSettings.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Controles\ContextMenuPro.resx">
+      <DependentUpon>ContextMenuPro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\DateTimeCustom.resx">
+      <DependentUpon>DateTimeCustom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\DateTimePro.resx">
+      <DependentUpon>DateTimePro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\DropDownPro.resx">
+      <DependentUpon>DropDownPro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\InputPro.resx">
+      <DependentUpon>InputPro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\LabelPro.resx">
+      <DependentUpon>LabelPro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\News.resx">
+      <DependentUpon>News.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\TextBoxValide.resx">
+      <DependentUpon>TextBoxValide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\ToolStripMenuItemPro.resx">
+      <DependentUpon>ToolStripMenuItemPro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsEnglish\frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsEnglish\frmHomePage.resx">
+      <DependentUpon>frmHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsEnglish\HomeUser.resx">
+      <DependentUpon>HomeUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario\Espera1.resx">
+      <DependentUpon>Espera1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario\Header.resx">
+      <DependentUpon>Header.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario\ListNews.resx">
+      <DependentUpon>ListNews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\MessageUser.resx">
+      <DependentUpon>MessageUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Usuario\PanelMain.resx">
+      <DependentUpon>PanelMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario\SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario\Tools.resx">
+      <DependentUpon>Tools.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario\UserSettings.resx">
+      <DependentUpon>UserSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Checked User Male_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Return_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User Credentials_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Toolbox_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loader.Image.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\No Audio_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Medium Volume_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Megaphone_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hexagon_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Triangle_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Full Moon_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rhombus_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Star_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Punto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gender Neutral User_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Checkmark_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel 2_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Read Message_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Error_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hide_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Panda.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Twitter_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FacebookFocused_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forward_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Negocio\Negocio.csproj">
+      <Project>{9605361a-caf8-41c8-98e8-1c1a0b001d8b}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Panda_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Checkmark_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel 2_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sorting Options_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Approval_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Next_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Repeat_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add User Male_96px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
